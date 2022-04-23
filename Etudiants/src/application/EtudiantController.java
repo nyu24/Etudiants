@@ -183,7 +183,7 @@ public class EtudiantController implements Initializable{
 	@FXML
 	void handleStat2() {
 		try {
-			FXMLLoader loader = new FXMLLoader(Main.class.getResource("AgeStat.fxml"));
+			FXMLLoader loader = new FXMLLoader(Main.class.getResource("DiagCirculaire.fxml"));
 			AnchorPane pane = loader.load();
 			Scene scene = new Scene(pane);
 			DiagCirculaire diag = loader.getController();
@@ -195,7 +195,7 @@ public class EtudiantController implements Initializable{
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
-	} //12:14 unfinished and theres an error
+	} 
 	//sauvegarde de donnees
 		//recuperer le chemin (path) des fichiers si ca existe
 	public File getEtudiantFilePath() {
